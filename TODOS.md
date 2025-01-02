@@ -1,6 +1,9 @@
 # TODOs
 Later, create a GitHub project for tasks.
 
+> [!IMPORTANT]
+> Try not to use Sass (or anything similar)
+
 ## Colors
 - [+] Basic start
 - [ ] Create a color palette  
