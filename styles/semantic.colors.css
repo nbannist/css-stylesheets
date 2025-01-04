@@ -1,241 +1,287 @@
-/* COLORS */
-:root {
-    /* BLUE BASE HUE and SATURATION and WHITENESS */
-    --c-blue-base-hue: 205;
-    --c-blue-base-sat: 100%;
-    --c-blue-base-wht: 50%;
-    /* BLACK BASE HUE and SATURATION and WHITENESS */
-    --c-black-base-hue: 0;
-    --c-black-base-sat: 0%;
-    --c-black-base-wht: 0%;
-    /* GREEN BASE HUE and SATURATION and WHITENESS */
-    --c-green-base-hue: 130;
-    --c-green-base-sat: 80%;
-    --c-green-base-wht: 50%;
-    /* YELLOW BASE HUE and SATURATION and WHITENESS */
-    --c-yellow-base-hue: 30;
-    --c-yellow-base-sat: 80%;
-    --c-yellow-base-wht: 50%;
-    /* ORANGE BASE HUE and SATURATION and WHITENESS */
-    --c-orange-base-hue: 20;
-    --c-orange-base-sat: 80%;
-    --c-orange-base-wht: 50%;
-    /* RED BASE HUE and SATURATION and WHITENESS */
-    --c-red-base-hue: 5;
-    --c-red-base-sat: 80%;
-    --c-red-base-wht: 50%;
-    /* MAGENTA BASE HUE and SATURATION and WHITENESS */
-    --c-magenta-base-hue: 330;
-    --c-magenta-base-sat: 80%;
-    --c-magenta-base-wht: 50%;
-    /* VIOLET BASE HUE and SATURATION and WHITENESS */
-    --c-violet-base-hue: 260;
-    --c-violet-base-sat: 80%;
-    --c-violet-base-wht: 50%;
 
-    /* BLUE GRADIENTS */
-    --c-hsl-blue-05: var(--c-blue-base-hue) var(--c-blue-base-sat) 5%;
-    --c-hsl-blue-10: var(--c-blue-base-hue) var(--c-blue-base-sat) 10%;
-    --c-hsl-blue-20: var(--c-blue-base-hue) var(--c-blue-base-sat) 20%;
-    --c-hsl-blue-30: var(--c-blue-base-hue) var(--c-blue-base-sat) 30%;
-    --c-hsl-blue-40: var(--c-blue-base-hue) var(--c-blue-base-sat) 40%;
-    --c-hsl-blue-50: var(--c-blue-base-hue) var(--c-blue-base-sat) 50%;
-    --c-hsl-blue-60: var(--c-blue-base-hue) var(--c-blue-base-sat) 60%;
-    --c-hsl-blue-70: var(--c-blue-base-hue) var(--c-blue-base-sat) 70%;
-    --c-hsl-blue-80: var(--c-blue-base-hue) var(--c-blue-base-sat) 80%;
-    --c-hsl-blue-90: var(--c-blue-base-hue) var(--c-blue-base-sat) 90%;
-    --c-hsl-blue-95: var(--c-blue-base-hue) var(--c-blue-base-sat) 95%;
-
-    /* BLACK GRADIENTS */
-    --c-hsl-black-05: var(--c-black-base-hue) var(--c-black-base-sat) 5%;
-    --c-hsl-black-10: var(--c-black-base-hue) var(--c-black-base-sat) 10%;
-    --c-hsl-black-20: var(--c-black-base-hue) var(--c-black-base-sat) 20%;
-    --c-hsl-black-30: var(--c-black-base-hue) var(--c-black-base-sat) 30%;
-    --c-hsl-black-40: var(--c-black-base-hue) var(--c-black-base-sat) 40%;
-    --c-hsl-black-50: var(--c-black-base-hue) var(--c-black-base-sat) 50%;
-    --c-hsl-black-60: var(--c-black-base-hue) var(--c-black-base-sat) 60%;
-    --c-hsl-black-70: var(--c-black-base-hue) var(--c-black-base-sat) 70%;
-    --c-hsl-black-80: var(--c-black-base-hue) var(--c-black-base-sat) 80%;
-    --c-hsl-black-90: var(--c-black-base-hue) var(--c-black-base-sat) 90%;
-
-    /* GREEN GRADIENTS */
-    --c-hsl-green-05: var(--c-green-base-hue) var(--c-green-base-sat) 5%;
-    --c-hsl-green-10: var(--c-green-base-hue) var(--c-green-base-sat) 10%;
-    --c-hsl-green-20: var(--c-green-base-hue) var(--c-green-base-sat) 20%;
-    --c-hsl-green-30: var(--c-green-base-hue) var(--c-green-base-sat) 30%;
-    --c-hsl-green-40: var(--c-green-base-hue) var(--c-green-base-sat) 40%;
-    --c-hsl-green-50: var(--c-green-base-hue) var(--c-green-base-sat) 50%;
-    --c-hsl-green-60: var(--c-green-base-hue) var(--c-green-base-sat) 60%;
-    --c-hsl-green-70: var(--c-green-base-hue) var(--c-green-base-sat) 70%;
-    --c-hsl-green-80: var(--c-green-base-hue) var(--c-green-base-sat) 80%;
-    --c-hsl-green-90: var(--c-green-base-hue) var(--c-green-base-sat) 90%;
-
-    /* YELLOW GRADIENTS */
-    --c-hsl-yellow-05: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 5%;
-    --c-hsl-yellow-10: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 10%;
-    --c-hsl-yellow-20: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 20%;
-    --c-hsl-yellow-30: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 30%;
-    --c-hsl-yellow-40: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 40%;
-    --c-hsl-yellow-50: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 50%;
-    --c-hsl-yellow-60: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 60%;
-    --c-hsl-yellow-70: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 70%;
-    --c-hsl-yellow-80: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 80%;
-    --c-hsl-yellow-90: var(--c-yellow-base-hue) var(--c-yellow-base-sat) 90%;
-
-    /* ORANGE GRADIENTS */
-    --c-hsl-orange-05: var(--c-orange-base-hue) var(--c-orange-base-sat) 5%;
-    --c-hsl-orange-10: var(--c-orange-base-hue) var(--c-orange-base-sat) 10%;
-    --c-hsl-orange-20: var(--c-orange-base-hue) var(--c-orange-base-sat) 20%;
-    --c-hsl-orange-30: var(--c-orange-base-hue) var(--c-orange-base-sat) 30%;
-    --c-hsl-orange-40: var(--c-orange-base-hue) var(--c-orange-base-sat) 40%;
-    --c-hsl-orange-50: var(--c-orange-base-hue) var(--c-orange-base-sat) 50%;
-    --c-hsl-orange-60: var(--c-orange-base-hue) var(--c-orange-base-sat) 60%;
-    --c-hsl-orange-70: var(--c-orange-base-hue) var(--c-orange-base-sat) 70%;
-    --c-hsl-orange-80: var(--c-orange-base-hue) var(--c-orange-base-sat) 80%;
-    --c-hsl-orange-90: var(--c-orange-base-hue) var(--c-orange-base-sat) 90%;
-
-    /* RED GRADIENTS */
-    --c-hsl-red-05: var(--c-red-base-hue) var(--c-red-base-sat) 5%;
-    --c-hsl-red-10: var(--c-red-base-hue) var(--c-red-base-sat) 10%;
-    --c-hsl-red-20: var(--c-red-base-hue) var(--c-red-base-sat) 20%;
-    --c-hsl-red-30: var(--c-red-base-hue) var(--c-red-base-sat) 30%;
-    --c-hsl-red-40: var(--c-red-base-hue) var(--c-red-base-sat) 40%;
-    --c-hsl-red-50: var(--c-red-base-hue) var(--c-red-base-sat) 50%;
-    --c-hsl-red-60: var(--c-red-base-hue) var(--c-red-base-sat) 60%;
-    --c-hsl-red-70: var(--c-red-base-hue) var(--c-red-base-sat) 70%;
-    --c-hsl-red-80: var(--c-red-base-hue) var(--c-red-base-sat) 80%;
-    --c-hsl-red-90: var(--c-red-base-hue) var(--c-red-base-sat) 90%;
-
-    /* MAGENTA GRADIENTS */
-    --c-hsl-magenta-05: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 5%;
-    --c-hsl-magenta-10: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 10%;
-    --c-hsl-magenta-20: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 20%;
-    --c-hsl-magenta-30: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 30%;
-    --c-hsl-magenta-40: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 40%;
-    --c-hsl-magenta-50: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 50%;
-    --c-hsl-magenta-60: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 60%;
-    --c-hsl-magenta-70: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 70%;
-    --c-hsl-magenta-80: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 80%;
-    --c-hsl-magenta-90: var(--c-magenta-base-hue) var(--c-magenta-base-sat) 90%;
-
-    /* VIOLET GRADIENTS */
-    --c-hsl-violet-05: var(--c-violet-base-hue) var(--c-violet-base-sat) 5%;
-    --c-hsl-violet-10: var(--c-violet-base-hue) var(--c-violet-base-sat) 10%;
-    --c-hsl-violet-20: var(--c-violet-base-hue) var(--c-violet-base-sat) 20%;
-    --c-hsl-violet-30: var(--c-violet-base-hue) var(--c-violet-base-sat) 30%;
-    --c-hsl-violet-40: var(--c-violet-base-hue) var(--c-violet-base-sat) 40%;
-    --c-hsl-violet-50: var(--c-violet-base-hue) var(--c-violet-base-sat) 50%;
-    --c-hsl-violet-60: var(--c-violet-base-hue) var(--c-violet-base-sat) 60%;
-    --c-hsl-violet-70: var(--c-violet-base-hue) var(--c-violet-base-sat) 70%;
-    --c-hsl-violet-80: var(--c-violet-base-hue) var(--c-violet-base-sat) 80%;
-    --c-hsl-violet-90: var(--c-violet-base-hue) var(--c-violet-base-sat) 90%;
-
-    /**
-    *
-    */
-
-    /* BLUE GRADIENTS */
-    --c-blue-0: var(--c-blue-base-hue) 0% 50%;
-    --c-blue-1: var(--c-blue-base-hue) 0% 40%;
-    --c-blue-2: var(--c-blue-base-hue) 0% 30%;
-    --c-blue-3: var(--c-blue-base-hue) 0% 20%;
-    --c-blue-4: var(--c-blue-base-hue) 0% 10%;
-    /* 50% */
-    --c-blue-5: var(--c-blue-base-hue) 0% 0%;
-    /* 50% */
-    --c-blue-6: var(--c-blue-base-hue) 20% 0%;
-    --c-blue-7: var(--c-blue-base-hue) 40% 0%;
-    --c-blue-8: var(--c-blue-base-hue) 60% 0%;
-    --c-blue-9: var(--c-blue-base-hue) 80% 0%;
-    --c-blue-10: var(--c-blue-base-hue) 90% 0%;
-    
-
-    /* BLACK GRADIENTS */
-    --c-hwb-black-05: var(--c-black-base-hue) var(--c-black-base-wht) 5%;
-    --c-hwb-black-10: var(--c-black-base-hue) var(--c-black-base-wht) 10%;
-    --c-hwb-black-20: var(--c-black-base-hue) var(--c-black-base-wht) 20%;
-    --c-hwb-black-30: var(--c-black-base-hue) var(--c-black-base-wht) 30%;
-    --c-hwb-black-40: var(--c-black-base-hue) var(--c-black-base-wht) 40%;
-    --c-hwb-black-50: var(--c-black-base-hue) var(--c-black-base-wht) 50%;
-    --c-hwb-black-60: var(--c-black-base-hue) var(--c-black-base-wht) 60%;
-    --c-hwb-black-70: var(--c-black-base-hue) var(--c-black-base-wht) 70%;
-    --c-hwb-black-80: var(--c-black-base-hue) var(--c-black-base-wht) 80%;
-    --c-hwb-black-90: var(--c-black-base-hue) var(--c-black-base-wht) 90%;
-
-    /* GREEN GRADIENTS */
-    --c-hwb-green-05: var(--c-green-base-hue) var(--c-green-base-wht) 5%;
-    --c-hwb-green-10: var(--c-green-base-hue) var(--c-green-base-wht) 10%;
-    --c-hwb-green-20: var(--c-green-base-hue) var(--c-green-base-wht) 20%;
-    --c-hwb-green-30: var(--c-green-base-hue) var(--c-green-base-wht) 30%;
-    --c-hwb-green-40: var(--c-green-base-hue) var(--c-green-base-wht) 40%;
-    --c-hwb-green-50: var(--c-green-base-hue) var(--c-green-base-wht) 50%;
-    --c-hwb-green-60: var(--c-green-base-hue) var(--c-green-base-wht) 60%;
-    --c-hwb-green-70: var(--c-green-base-hue) var(--c-green-base-wht) 70%;
-    --c-hwb-green-80: var(--c-green-base-hue) var(--c-green-base-wht) 80%;
-    --c-hwb-green-90: var(--c-green-base-hue) var(--c-green-base-wht) 90%;
-
-    /* YELLOW GRADIENTS */
-    --c-hwb-yellow-05: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 5%;
-    --c-hwb-yellow-10: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 10%;
-    --c-hwb-yellow-20: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 20%;
-    --c-hwb-yellow-30: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 30%;
-    --c-hwb-yellow-40: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 40%;
-    --c-hwb-yellow-50: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 50%;
-    --c-hwb-yellow-60: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 60%;
-    --c-hwb-yellow-70: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 70%;
-    --c-hwb-yellow-80: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 80%;
-    --c-hwb-yellow-90: var(--c-yellow-base-hue) var(--c-yellow-base-wht) 90%;
-
-    /* ORANGE GRADIENTS */
-    --c-hwb-orange-05: var(--c-orange-base-hue) var(--c-orange-base-wht) 5%;
-    --c-hwb-orange-10: var(--c-orange-base-hue) var(--c-orange-base-wht) 10%;
-    --c-hwb-orange-20: var(--c-orange-base-hue) var(--c-orange-base-wht) 20%;
-    --c-hwb-orange-30: var(--c-orange-base-hue) var(--c-orange-base-wht) 30%;
-    --c-hwb-orange-40: var(--c-orange-base-hue) var(--c-orange-base-wht) 40%;
-    --c-hwb-orange-50: var(--c-orange-base-hue) var(--c-orange-base-wht) 50%;
-    --c-hwb-orange-60: var(--c-orange-base-hue) var(--c-orange-base-wht) 60%;
-    --c-hwb-orange-70: var(--c-orange-base-hue) var(--c-orange-base-wht) 70%;
-    --c-hwb-orange-80: var(--c-orange-base-hue) var(--c-orange-base-wht) 80%;
-    --c-hwb-orange-90: var(--c-orange-base-hue) var(--c-orange-base-wht) 90%;
-
-    /* RED GRADIENTS */
-    --c-hwb-red-05: var(--c-red-base-hue) var(--c-red-base-wht) 5%;
-    --c-hwb-red-10: var(--c-red-base-hue) var(--c-red-base-wht) 10%;
-    --c-hwb-red-20: var(--c-red-base-hue) var(--c-red-base-wht) 20%;
-    --c-hwb-red-30: var(--c-red-base-hue) var(--c-red-base-wht) 30%;
-    --c-hwb-red-40: var(--c-red-base-hue) var(--c-red-base-wht) 40%;
-    --c-hwb-red-50: var(--c-red-base-hue) var(--c-red-base-wht) 50%;
-    --c-hwb-red-60: var(--c-red-base-hue) var(--c-red-base-wht) 60%;
-    --c-hwb-red-70: var(--c-red-base-hue) var(--c-red-base-wht) 70%;
-    --c-hwb-red-80: var(--c-red-base-hue) var(--c-red-base-wht) 80%;
-    --c-hwb-red-90: var(--c-red-base-hue) var(--c-red-base-wht) 90%;
-
-    /* MAGENTA GRADIENTS */
-    --c-hwb-magenta-05: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 5%;
-    --c-hwb-magenta-10: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 10%;
-    --c-hwb-magenta-20: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 20%;
-    --c-hwb-magenta-30: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 30%;
-    --c-hwb-magenta-40: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 40%;
-    --c-hwb-magenta-50: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 50%;
-    --c-hwb-magenta-60: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 60%;
-    --c-hwb-magenta-70: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 70%;
-    --c-hwb-magenta-80: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 80%;
-    --c-hwb-magenta-90: var(--c-magenta-base-hue) var(--c-magenta-base-wht) 90%;
-
-    /* VIOLET GRADIENTS */
-    --c-hwb-violet-05: var(--c-violet-base-hue) var(--c-violet-base-wht) 5%;
-    --c-hwb-violet-10: var(--c-violet-base-hue) var(--c-violet-base-wht) 10%;
-    --c-hwb-violet-20: var(--c-violet-base-hue) var(--c-violet-base-wht) 20%;
-    --c-hwb-violet-30: var(--c-violet-base-hue) var(--c-violet-base-wht) 30%;
-    --c-hwb-violet-40: var(--c-violet-base-hue) var(--c-violet-base-wht) 40%;
-    --c-hwb-violet-50: var(--c-violet-base-hue) var(--c-violet-base-wht) 50%;
-    --c-hwb-violet-60: var(--c-violet-base-hue) var(--c-violet-base-wht) 60%;
-    --c-hwb-violet-70: var(--c-violet-base-hue) var(--c-violet-base-wht) 70%;
-    --c-hwb-violet-80: var(--c-violet-base-hue) var(--c-violet-base-wht) 80%;
-    --c-hwb-violet-90: var(--c-violet-base-hue) var(--c-violet-base-wht) 90%;
+html,
+body {
+    font-size: 16px;
+    background-color: #1b1b1b;
+    color: #eaeaea;
+    line-height: 1.5rem;
 }
 
-table > tbody > tr > td {
-    min-width: 100px;
+.darkmode {
+    background-color: hsl(0, 0%, 15%);
 }
 
+.lightmode {
+    background-color: #fafafa;
+}
+
+tr {
+    padding: .5rem;
+    display: block;
+    border-radius: 2px;
+}
+
+td {
+    padding: .5rem;
+    margin: .5rem;
+    display: inline-block;
+    border-radius: 3px;
+}
+
+/**
+*
+*
+*
+*
+*/
+.black {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 0%, 13%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 37%);
+    border-left-color: hsl(0, 0%, 57%);
+    border-left-width: 3px;
+}
+
+.black.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(0, 0%, 81%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 0%, 44%);
+    border-left-color: hsl(0, 0%, 64%);
+    border-left-width: 3px;
+}
+
+/* red: 0 */
+.red {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(0, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 100%, 44%);
+    border-left-color: hsl(0, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.red.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsla(0, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(0, 100%, 44%);
+    border-left-color: hsl(0, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* orange: 15 */
+.orange {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(35, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(35, 100%, 44%);
+    border-left-color: hsl(35, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.orange.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(35, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(35, 100%, 44%);
+    border-left-color: hsl(35, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* yellow: 40 */
+.yellow {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(50, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(50, 100%, 44%);
+    border-left-color: hsl(50, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.yellow.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(50, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(50, 100%, 44%);
+    border-left-color: hsl(50, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* green: 132 */
+/*
+    --green-fg-lightmode: 132 60% 30%;
+    --green-bg-lightmode: 132 70% 60%;
+*/
+.green {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(132, 60%, 30%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(132, 60%, 40%);
+    border-left-color: hsl(132, 70%, 60%);
+    border-left-width: 3px;
+}
+
+.green.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(132, 60%, 91%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(132, 60%, 40%);
+    border-left-color: hsl(132, 70%, 60%);
+    border-left-width: 3px;
+}
+
+/* blue: 201 */
+.blue {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(201, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(201, 100%, 44%);
+    border-left-color: hsl(201, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.blue.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(201, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(201, 100%, 44%);
+    border-left-color: hsl(201, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* indigo: 270 */
+.indigo {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(275, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(275, 100%, 44%);
+    border-left-color: hsl(275, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.indigo.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(275, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(275, 100%, 44%);
+    border-left-color: hsl(275, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* violet: 305 */
+.violet {
+    color: hsl(0, 0%, 98%);
+    background-color: hsl(300, 100%, 34%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(300, 100%, 44%);
+    border-left-color: hsl(300, 100%, 64%);
+    border-left-width: 3px;
+}
+
+.violet.invert {
+    color: hsl(0, 0%, 13%);
+    background-color: hsl(300, 100%, 93%);
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: hsl(300, 100%, 44%);
+    border-left-color: hsl(300, 100%, 64%);
+    border-left-width: 3px;
+}
+
+/* LINK */
+a,
+a:link {
+    color: hsl(201, 100%, 34%);
+    padding: 1pt 1px 0px 1px;
+    text-decoration: none;
+    border-bottom: 1px solid hsl(201, 100%, 34%);
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+    outline: none;
+}
+
+a:link:focus {
+    border: 1px solid hsl(201, 100%, 64%);
+    background-color: hsl(201, 100%, 93%);
+    border-radius: 2px;
+    text-decoration:underline;
+    outline: none;
+}
+
+a:link:hover {
+    border: 1px solid hsl(201, 100%, 34%);
+    background-color: hsl(201, 100%, 93%);
+    border-radius: 2px;
+    text-decoration:underline;
+    outline: none;
+}
+
+/* VISITED */
+/* 275 Seems a bit dark for text on a dark background */
+a:visited {
+    color: hsl(275, 100%, 34%);
+    border-bottom: 1px solid hsl(275, 100%, 34%);
+}
+
+a:visited:focus {
+    border: 1px solid hsl(275, 100%, 34%);
+    background-color: hsl(275, 100%, 93%);
+    text-decoration:underline;
+}
+
+a:visited:hover {
+    border: 1px solid hsl(275, 100%, 34%);
+    background-color: hsl(275, 100%, 93%);
+    text-decoration:underline;
+}
+
+/* ACTIVE */
+a:active {
+    color: hsl(0, 100%, 34%);
+    border-bottom: 1px solid hsl(0, 100%, 34%);
+}
+
+a:active:hover {
+    border: 1px solid hsl(0, 100%, 34%);
+    background-color: hsl(5, 100%, 93%);
+    text-decoration:underline;
+}
+
+a:active:focus {
+    border: 1px solid hsl(0, 100%, 34%);
+    background-color: hsl(5, 100%, 93%);
+    text-decoration:underline;
+}
